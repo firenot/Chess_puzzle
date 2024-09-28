@@ -3,19 +3,13 @@ def delta(value_1, value_2):
 
 
 def move_horizontal_or_vertical(letter_start, letter_finish, number_start, number_finish):
-    if letter_start == letter_finish:
+    if letter_start == letter_finish or number_start == number_finish:
         return True
-    elif number_start == number_finish:
-        return True
-    else:
-        return False
 
 
 def move_diagonal(letter_start, letter_finish, number_start, number_finish):
     if delta(letter_start, letter_finish) == delta(number_start, number_finish):
         return True
-    else:
-        return False
 
 
 def pawn(letter_start, letter_finish, number_start, number_finish):

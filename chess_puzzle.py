@@ -3,9 +3,9 @@ def delta(value_1, value_2):
 
 
 def move_horizontal_or_vertical(letter_start, letter_finish, number_start, number_finish):
-    if letter_start == letter_finish and number_start != number_finish:
+    if letter_start == letter_finish:
         return True
-    elif letter_start != letter_finish and number_start == number_finish:
+    elif number_start == number_finish:
         return True
     else:
         return False
